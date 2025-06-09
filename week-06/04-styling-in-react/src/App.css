@@ -1,0 +1,16 @@
+/* I use the App.css stylesheet for global styles, we delete the index.css! (preference) */
+
+/* The :root pseudo-class applies styles looking at the top level of your app */
+
+/* import tailwind into globals to make it available to your whole website */
+@import "tailwindcss";
+
+:root {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: darkcyan;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}

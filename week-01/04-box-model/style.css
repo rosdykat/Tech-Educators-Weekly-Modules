@@ -1,0 +1,39 @@
+/* This is a basic reset of default values */
+
+* {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #5b6dcd 10px;
+  padding: 5px;
+}
+
+body {
+  background-color: rgb(239, 175, 255);
+}
+.cheesecake1 {
+}
+
+.cheesecake2 {
+}
+
+.box {
+  background: #ffffff;
+  padding: 20px;
+  width: 200px;
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10;
+}
+
+.box2 {
+  background: #ff7777;
+  padding: 20px;
+  width: 200px;
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10;
+}
+/* TIP: margin values will overlap */
+/* padding values do not overlap */
+/* padding carries background colour, magin is blank */
+/* if you want to stop the browser from adding default values, we can have a reset at the top of the CSS stylesheet */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>01 Module Formst</title>
+  </head>
+  <body>
+    <h1>Forms, User Input and Validation Feedback</h1>
+    <form id="main-form">
+      <label for="name">name</label>
+      <input type="name" name="name" required />
+
+      <label for="city">city</label>
+      <input type="city" name="city" required />
+
+      <fieldset>
+        <legend>hobbies</legend>
+        <label for="food">Favourite food</label>
+        <select name="food" id="food">
+          <option value="food" selected hidden>Food</option>
+          <option value="chocolate">chocolate</option>
+          <option value="cake">cake</option>
+          <option value="vegetables">vegetables</option>
+        </select>
+      </fieldset>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>

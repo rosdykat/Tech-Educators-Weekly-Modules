@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Forms: structure and styling</title>
+  </head>
+  <body>
+    <h1>Forms: Structure and Styling</h1>
+    <form>
+      <!-- Link label and input by matching the 'for' and 'name' attributes -->
+      <!-- form flow: label and input, match for and name, validation -->
+      <label for="first-name">First Name</label>
+      <input type="first-name" name="first-name" required id="" /> </label>
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" required />
+      <!-- fieldset, keeps website as well as code tidy -->
+      <fieldset>
+        <!-- legend = title of the field set -->
+        <legend>Do you like this website?</legend>
+        <label for="like"
+          >Yes<input type="radio" name="like" value="yes"
+        /></label>
+        <label for="like"
+          >No<input type="radio" name="like" value="no"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What is your favourite cat?</legend>
+        <label for="kitties">kittiessss</label>
+        <select name="kitties" id="kitty">
+          <option value="" selected hidden>Colours</option>
+          <option value="orange">Orange</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="tabby">Tabby</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

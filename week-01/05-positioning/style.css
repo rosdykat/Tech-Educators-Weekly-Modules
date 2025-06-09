@@ -1,0 +1,45 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Position absolute will move and element from the top, right, bottom, or left in relation to our website page. It's not considering the parent container */
+
+h2 {
+  color: white;
+  font-size: 32px;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* this selector does not work because the h2 can't be 50px from the left and from the right at the same time */
+}
+
+.image-container {
+  /* Position relative is applied to the parent container */
+  background: #eee;
+  height: 700px;
+  width: 600px;
+  position: relative;
+}
+header {
+  top: 50px;
+  left: 50px;
+}
+.cookie-notice {
+  background: #a73737;
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.cat {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

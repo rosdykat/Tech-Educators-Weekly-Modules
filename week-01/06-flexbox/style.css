@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightseagreen;
+}
+
+/* add flex to the section as it's the parent container  */
+.main-section {
+  display: flex;
+  /* the default direction is row */
+  flex-direction: row;
+  /* Justify-content applies style in the flex direction */
+  justify-content: space-evenly;
+  /* Align-items applies style in the opposite flex direction */
+  align-items: center;
+  background-color: red;
+  flex-wrap: wrap;
+}
+
+p {
+  width: 200px;
+}

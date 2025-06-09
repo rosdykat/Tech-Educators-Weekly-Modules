@@ -1,0 +1,46 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#intro-text {
+  margin-inline: auto;
+  max-width: fit-content;
+}
+
+.container {
+  background: rgb(255, 218, 255);
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 2px solid rgb(249, 249, 186);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero {
+  /* min-width: 50vh; */
+  min-height: 50vw;
+}
+
+/* css for the section to apply grid template */
+
+.images-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  height: 100dvh;
+}

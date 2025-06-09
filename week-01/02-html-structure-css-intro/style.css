@@ -1,0 +1,37 @@
+/* CSS means cascading StyleSheet */
+body {
+  background-color: rgb(151, 190, 212);
+  font-family: monospace;
+  text-align: center;
+}
+
+header {
+  background-color: yellow;
+}
+
+h1 {
+  background-color: blue;
+  font-size: 20px;
+}
+h2 {
+  font-size: 50px;
+}
+
+main {
+  background-color: green;
+}
+
+footer {
+  background-color: grey;
+}
+
+/* if we select an element using the tag, it will effect all elements */
+button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: aliceblue;
+  font-size: 2rem;
+}
+
+nav {
+  color: blanchedalmond;
+}
