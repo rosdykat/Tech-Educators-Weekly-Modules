@@ -5,6 +5,7 @@ import NotFound from "./Components/NotFound";
 import Home from "./Components/Home";
 import { Routes, Route } from "react-router";
 import UserProfile from "./Components/UserProfile";
+import UserOrders from "./Components/UserOrders";
 
 // Routes will be the parent of all our Route components
 
@@ -26,9 +27,16 @@ export default function App() {
           }
         />
         <Route path={"/contact"} element={<Contact />} />
-        <Route path={"profile/:username"} element={<UserProfile />} />
+        {/* <Route path={"profile/:username"} element={<UserProfile />} /> */}
         <Route path={"/*"} element={<NotFound />} />
+        <Route path={"/profile/:username"} element={<UserProfile />}>
+          {/* Our nested route is a relative path so we don't add / */}
+          <Route path={"orders"} element={<UserOrders />} />
+        </Route>
       </Routes>
     </>
   );
 }
+
+// /profile/:username
+// profile/:username/orders
