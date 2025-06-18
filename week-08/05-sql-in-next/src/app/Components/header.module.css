@@ -1,0 +1,18 @@
+/* we need to use pure selectors (className) to style our elements */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: var(--color-blue-600);
+}
+
+.body {
+  grid-area: 1 / 2 / span 1 / span 1;
+  background-color: white;
+  border: solid 3px purple;
+}
