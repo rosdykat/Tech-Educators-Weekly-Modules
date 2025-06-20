@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserratFont.className}>
         <NavPage />
-        <div className="body">{children}</div>
+        <div className="main">{children}</div>
         <Footer />
       </body>
     </html>
